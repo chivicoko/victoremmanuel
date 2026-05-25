@@ -75,8 +75,12 @@ export const Hero = () => {
                 <button className="btn-primary" onClick={() => router.push('/#contact')}>
                   Contact Me <ArrowRight className="w-4 h-4" />
                 </button>
-                <button className="btn-secondary" onClick={() => router.push('/VICTOR_OKOYE.pdf')}>
-                  <Download className="w-4 h-4" /> Download CV
+                <button
+                  className="btn-secondary"
+                  onClick={() => window.open('/VICTOR_OKOYE.pdf', '_blank')}
+                >
+                  <Download className="w-4 h-4" />
+                  Download CV
                 </button>
               </div>
 
