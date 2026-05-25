@@ -43,8 +43,8 @@ export const Contact = () => {
         name: formData.name,
         email: formData.email,
         message: formData.message,
-        username: formData.email,
-        subject: `From My Site: ${formData.email}`,
+        username: formData.name,
+        subject: `VictorEmmanuel Portfolio: From ${formData.name}`,
       }, publicKey)
 
       setSubmitStatus({ type: 'success', message: "Message sent successfully! I'll get back to you soon." })
