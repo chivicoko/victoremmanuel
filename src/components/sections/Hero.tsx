@@ -59,7 +59,7 @@ export const Hero = () => {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden sm:pt-24 md:pt-36 pb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-36 pb-16">
         {/* Background grid */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -114,7 +114,7 @@ export const Hero = () => {
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-wrap gap-4 mb-12 animate-fade-in animation-delay-300">
+              <div className="flex flex-wrap gap-2 sm:gap-4 mb-12 animate-fade-in animation-delay-300">
                 <Tooltip content="Reach out - I'm always ready to serve">
                   <button
                     className="btn-primary"
