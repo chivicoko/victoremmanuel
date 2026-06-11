@@ -220,8 +220,8 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
-          <button onClick={() => router.push("/#about")} className="py-4">
+        <div className="absolute bottom-14 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
+          <button onClick={() => router.push("/#about")} className="py-2">
             <MoveDownIcon className="animate-bounce" />
           </button>
         </div>
