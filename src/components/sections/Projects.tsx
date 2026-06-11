@@ -202,7 +202,7 @@ export const Projects = () => {
                   after:pointer-events-none
                 "
                 style={{
-                  top: `${100 + i * 25}px`,
+                  top: `${80 + i * 25}px`,
                   zIndex: i + 1,
                   background: "#141414",
                   border: "1px solid rgba(255,255,255,0.07)",
@@ -213,7 +213,7 @@ export const Projects = () => {
                   <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
                     <div>
                       <div
-                        className="text-base font-display tracking-widest uppercase mb-4"
+                        className="text-base font-display tracking-widest uppercase mb-1 sm:mb-4"
                         style={{ color: "rgba(122,119,111,0.5)" }}
                       >
                         {String(i + 1).padStart(2, "0")}
@@ -228,7 +228,7 @@ export const Projects = () => {
                     </div>
 
                     <div className="mt-4 md:mt-10">
-                      <div className="flex flex-wrap gap-2 mb-6">
+                      <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
                         {p.tags.map((t, j) => (
                           <span key={j} className="tag">
                             {t}
