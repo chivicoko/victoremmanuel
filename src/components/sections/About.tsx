@@ -32,7 +32,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="py-28 border-t"
+      className="py-16 sm:py-28 border-t"
       style={{ borderColor: "rgba(255,255,255,0.07)" }}
     >
       <div className="max-w-300 mx-auto px-6 md:px-8">

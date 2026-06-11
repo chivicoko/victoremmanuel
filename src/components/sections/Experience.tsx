@@ -52,7 +52,7 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-28"
+      className="py-16 sm:py-28"
       style={{ borderColor: "rgba(255,255,255,0.07)" }}
     >
       <div className="max-w-300 mx-auto px-6 md:px-8">

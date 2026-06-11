@@ -349,10 +349,14 @@ export const Contact = () => {
                 className="flex items-center gap-2.5 mb-3 font-display font-bold"
                 style={{ color: "#e8a44a" }}
               >
-                <span
+                {/* <span
                   className="w-2 h-2 rounded-full bg-green-400"
                   style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
-                />
+                /> */}
+                <span className="relative flex size-3">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
+                </span>
                 Currently Available
               </div>
               <p className="text-base text-muted-foreground leading-[1.75]">
