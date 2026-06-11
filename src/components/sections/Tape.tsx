@@ -38,7 +38,7 @@ const Tape = () => {
                   <span className="text-gray-900 uppercase font-extrabold text-sm">
                     {word}
                   </span>
-                  <StarIcon className="size-5 fill-gray-900 text-gray-900 -rotate-12" />
+                  <StarIcon className="size-5 fill-gray-900 text-gray-900 animate-item-rotate" />
                 </div>
               ))}
             </div>
