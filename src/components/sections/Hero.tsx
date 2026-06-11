@@ -115,7 +115,7 @@ export const Hero = () => {
 
               {/* CTAs */}
               <div className="flex flex-wrap gap-4 mb-12 animate-fade-in animation-delay-300">
-                <Tooltip content="Reach out - I'm always prepared.">
+                <Tooltip content="Reach out - I'm always ready to serve">
                   <button
                     className="btn-primary"
                     onClick={() => router.push("/#contact")}
@@ -219,12 +219,10 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 outline rounded-full py-4">
-          <Tooltip content="See other sections about me">
-            <button onClick={() => router.push("/#about")}>
-              <MoveDownIcon className="animate-bounce" />
-            </button>
-          </Tooltip>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
+          <button onClick={() => router.push("/#about")} className="py-4">
+            <MoveDownIcon className="animate-bounce" />
+          </button>
         </div>
       </section>
 
