@@ -59,7 +59,7 @@ export const Hero = () => {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-10 sm:pt-24 md:pt-36 pb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-6 sm:pt-24 md:pt-36 pb-16">
         {/* Background grid */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -220,7 +220,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
           <button onClick={() => router.push("/#about")} className="py-4">
             <MoveDownIcon className="animate-bounce" />
           </button>
