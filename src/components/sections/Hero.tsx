@@ -59,7 +59,7 @@ export const Hero = () => {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-36 pb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 sm:pt-24 md:pt-36 pb-16">
         {/* Background grid */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -107,26 +107,27 @@ export const Hero = () => {
                 experiences.
               </h1>
 
-              <p className="text-muted-foreground text-[1.0625rem] max-w-120 leading-[1.75] mb-10 animate-fade-in animation-delay-200">
+              <p className="text-muted-foreground text-[1.0625rem] max-w-120 leading-[1.75] mb-5 sm:mb-10 animate-fade-in animation-delay-200">
                 Hi, I&apos;m Victor Okoye — a software engineer specializing in
                 React, Next.js, and TypeScript. I build scalable, performant web
                 applications that users love.
               </p>
 
               {/* CTAs */}
-              <div className="flex flex-wrap gap-2 sm:gap-4 mb-12 animate-fade-in animation-delay-300">
+              <div className="flex flex-wrap gap-2 sm:gap-4 mb-6 sm:mb-12 animate-fade-in animation-delay-300">
                 <Tooltip content="Reach out - I'm always ready to serve">
                   <button
-                    className="btn-primary px-3 sm:px-6"
+                    className="btn-primary px-4 sm:px-6"
                     onClick={() => router.push("/#contact")}
                   >
-                    Contact Me <ArrowRight className="w-4 h-4" />
+                    Contact Me{" "}
+                    <ArrowRight className="hidden sm:inline w-4 h-4" />
                   </button>
                 </Tooltip>
 
                 <Tooltip content="Click to view CV in a new tab">
                   <button
-                    className="btn-secondary px-3 sm:px-6"
+                    className="btn-secondary px-4 sm:px-6"
                     onClick={() => window.open("/VICTOR_OKOYE.pdf", "_blank")}
                   >
                     <Download className="w-4 h-4" />
