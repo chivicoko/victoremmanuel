@@ -79,7 +79,7 @@ export const Projects = () => {
                 color: !gridView ? "#0c0c0c" : "var(--color-muted-foreground)",
               }}
             >
-              <List className="w-3.5 h-3.5" /> List
+              <List className="w-3.5 h-3.5" /> Stack
             </button>
             <button
               onClick={() => setGridView(true)}
@@ -208,9 +208,9 @@ export const Projects = () => {
                   border: "1px solid rgba(255,255,255,0.07)",
                 }}
               >
-                <div className="grid lg:grid-cols-[1fr_1.3fr]">
+                <div className="grid lg:grid-cols-[1fr_1.3fr] sm:h-[60vh]">
                   {/* LEFT - CONTENT */}
-                  <div className="flex flex-col justify-between p-6 sm:p-8 lg:p-10">
+                  <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
                     <div>
                       <div
                         className="text-base font-display tracking-widest uppercase mb-4"
@@ -218,7 +218,6 @@ export const Projects = () => {
                       >
                         {String(i + 1).padStart(2, "0")}
                       </div>
-
                       <h3 className="font-display font-bold text-2xl md:text-3xl mb-4 text-foreground group-hover:text-primary transition-colors">
                         {p.title}
                       </h3>
@@ -249,7 +248,6 @@ export const Projects = () => {
                       </div>
                     </div>
                   </div>
-
                   {/* RIGHT - IMAGE */}
                   <div
                     className="

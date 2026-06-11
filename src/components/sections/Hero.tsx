@@ -9,9 +9,11 @@ import {
   Twitter,
   MessageCircle,
   Terminal,
+  MoveDownIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { Tooltip } from "../ui/Tooltip";
 
 const skills = [
   "React",
@@ -57,7 +59,7 @@ export const Hero = () => {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-36 pb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden sm:pt-24 md:pt-36 pb-16">
         {/* Background grid */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -77,7 +79,6 @@ export const Hero = () => {
               "radial-gradient(ellipse 70% 50% at 65% 40%, rgba(232,164,74,0.04) 0%, transparent 60%)",
           }}
         />
-
         <div className="max-w-300 mx-auto px-6 md:px-8 w-full relative z-10">
           <div className="grid lg:grid-cols-[1fr_420px] gap-16 items-center">
             {/* Left */}
@@ -85,7 +86,7 @@ export const Hero = () => {
               {/* Eyebrow */}
               <div className="flex items-center gap-3 mb-8 animate-fade-in">
                 <span className="w-8 h-px bg-primary shrink-0" />
-                <span className="font-display text-base tracking-[0.15em] uppercase text-primary">
+                <span className="font-display text-sm sm:text-base tracking-[0.15em] uppercase text-primary">
                   Software Engineer · React Specialist
                 </span>
               </div>
@@ -93,7 +94,7 @@ export const Hero = () => {
               {/* Headline */}
               <h1
                 className="font-display font-extrabold leading-[0.95] tracking-[-0.03em] mb-8 animate-fade-in animation-delay-100"
-                style={{ fontSize: "clamp(3rem, 7vw, 5rem)" }}
+                style={{ fontSize: "clamp(2.8rem, 7vw, 5rem)" }}
               >
                 Crafting <br />
                 <em
@@ -114,19 +115,24 @@ export const Hero = () => {
 
               {/* CTAs */}
               <div className="flex flex-wrap gap-4 mb-12 animate-fade-in animation-delay-300">
-                <button
-                  className="btn-primary"
-                  onClick={() => router.push("/#contact")}
-                >
-                  Contact Me <ArrowRight className="w-4 h-4" />
-                </button>
-                <button
-                  className="btn-secondary"
-                  onClick={() => window.open("/VICTOR_OKOYE.pdf", "_blank")}
-                >
-                  <Download className="w-4 h-4" />
-                  Download CV
-                </button>
+                <Tooltip content="Reach out - I'm always prepared.">
+                  <button
+                    className="btn-primary"
+                    onClick={() => router.push("/#contact")}
+                  >
+                    Contact Me <ArrowRight className="w-4 h-4" />
+                  </button>
+                </Tooltip>
+
+                <Tooltip content="Click to view CV in a new tab">
+                  <button
+                    className="btn-secondary"
+                    onClick={() => window.open("/VICTOR_OKOYE.pdf", "_blank")}
+                  >
+                    <Download className="w-4 h-4" />
+                    Download CV
+                  </button>
+                </Tooltip>
               </div>
 
               {/* Socials */}
@@ -212,10 +218,18 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 outline rounded-full py-4">
+          <Tooltip content="See other sections about me">
+            <button onClick={() => router.push("/#about")}>
+              <MoveDownIcon className="animate-bounce" />
+            </button>
+          </Tooltip>
+        </div>
       </section>
 
       {/* ── Skills marquee ── */}
-      <div
+      {/* <div
         className="py-10 overflow-hidden border-y"
         style={{ borderColor: "rgba(255,255,255,0.07)" }}
       >
@@ -255,7 +269,7 @@ export const Hero = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
