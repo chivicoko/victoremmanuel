@@ -117,7 +117,7 @@ export const Hero = () => {
               <div className="flex flex-wrap gap-2 sm:gap-4 mb-12 animate-fade-in animation-delay-300">
                 <Tooltip content="Reach out - I'm always ready to serve">
                   <button
-                    className="btn-primary"
+                    className="btn-primary px-3 sm:px-6"
                     onClick={() => router.push("/#contact")}
                   >
                     Contact Me <ArrowRight className="w-4 h-4" />
@@ -126,7 +126,7 @@ export const Hero = () => {
 
                 <Tooltip content="Click to view CV in a new tab">
                   <button
-                    className="btn-secondary"
+                    className="btn-secondary px-3 sm:px-6"
                     onClick={() => window.open("/VICTOR_OKOYE.pdf", "_blank")}
                   >
                     <Download className="w-4 h-4" />
