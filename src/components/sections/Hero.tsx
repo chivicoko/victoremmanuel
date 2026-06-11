@@ -59,7 +59,7 @@ export const Hero = () => {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-16 sm:pt-24 md:pt-36 pb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-10 sm:pt-24 md:pt-36 pb-16">
         {/* Background grid */}
         <div
           className="absolute inset-0 pointer-events-none"
