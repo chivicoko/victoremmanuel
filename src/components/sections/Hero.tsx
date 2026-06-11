@@ -86,7 +86,7 @@ export const Hero = () => {
               {/* Eyebrow */}
               <div className="flex items-center gap-3 mb-8 animate-fade-in">
                 <span className="w-8 h-px bg-primary shrink-0" />
-                <span className="font-display text-sm sm:text-base tracking-[0.15em] uppercase text-primary">
+                <span className="font-display text-base tracking-[0.15em] uppercase text-primary">
                   Software Engineer · React Specialist
                 </span>
               </div>
@@ -220,7 +220,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-14 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
+        <div className="absolute bottom-16 left-1/2 -translate-x-1/2 outline rounded-full text-amber">
           <button onClick={() => router.push("/#about")} className="py-2">
             <MoveDownIcon className="animate-bounce" />
           </button>
