@@ -321,7 +321,7 @@ export const Contact = () => {
                 className="flex items-center gap-3 mt-5 pt-5"
                 style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}
               >
-                <span className="text-base text-muted-foreground/60">
+                <span className="text-base text-muted-foreground/00">
                   Let&apos;s chat:
                 </span>
                 {socialLinks.map((s) => (
@@ -331,7 +331,7 @@ export const Contact = () => {
                     className="social-link"
                     aria-label={s.label}
                   >
-                    <s.icon className="w-5 h-5" />
+                    <s.icon className="w-6 h-6" />
                   </Link>
                 ))}
               </div>
@@ -349,10 +349,6 @@ export const Contact = () => {
                 className="flex items-center gap-2.5 mb-3 font-display font-bold"
                 style={{ color: "#e8a44a" }}
               >
-                {/* <span
-                  className="w-2 h-2 rounded-full bg-green-400"
-                  style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
-                /> */}
                 <span className="relative flex size-3">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>

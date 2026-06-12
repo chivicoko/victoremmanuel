@@ -7,7 +7,7 @@ import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Victor Okoye | Software Engineer",
+  title: "Home | Victor OKOYE",
   description:
     "Software engineer specializing in React, Next.js, and TypeScript. Building scalable, performant web applications.",
 };

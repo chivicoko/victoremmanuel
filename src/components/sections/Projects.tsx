@@ -202,15 +202,18 @@ export const Projects = () => {
                   after:pointer-events-none
                 "
                 style={{
-                  top: `${80 + i * 25}px`,
+                  top: `${80 + i * 35}px`,
                   zIndex: i + 1,
                   background: "#141414",
                   border: "1px solid rgba(255,255,255,0.07)",
                 }}
               >
-                <div className="grid lg:grid-cols-[1fr_1.3fr] sm:h-[60vh]">
+                <div className="bg-white/20 sm:h-[4.5vh] px-6 py-2 text-primary font-bold">
+                  {p.title}
+                </div>
+                <div className="grid lg:grid-cols-[1fr_1.3fr] sm:h-[55.5vh]">
                   {/* LEFT - CONTENT */}
-                  <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+                  <div className="flex flex-col justify-center p-4 sm:p-8 lg:p-10">
                     <div>
                       <div
                         className="text-base font-display tracking-widest uppercase mb-1 sm:mb-4"
@@ -242,8 +245,8 @@ export const Projects = () => {
                           <ArrowUpRight className="size-4" />
                         </Link>
 
-                        <Link href={p.github} className="social-link">
-                          <Github className="size-5" />
+                        <Link href={p.github} className="social-link size-14">
+                          <Github className="size-6" />
                         </Link>
                       </div>
                     </div>
@@ -300,8 +303,8 @@ export const Projects = () => {
         )}
 
         <div className="text-center mt-10">
-          <Link href="#" className="btn-secondary">
-            View All Projects <ArrowUpRight className="w-4 h-4" />
+          <Link href="#" className="btn-secondary font-bold">
+            View More Projects <ArrowUpRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

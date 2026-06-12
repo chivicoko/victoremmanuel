@@ -1,7 +1,7 @@
 "use client";
 
-import useScrollVisibility from '@/hooks/useScrollVisibility';
-import { ArrowUpFromDotIcon } from 'lucide-react';
+import useScrollVisibility from "@/hooks/useScrollVisibility";
+import { ArrowUpFromDotIcon } from "lucide-react";
 // import { North } from '@mui/icons-material';
 
 export default function ScrollToTopButton() {
@@ -10,7 +10,7 @@ export default function ScrollToTopButton() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -18,7 +18,7 @@ export default function ScrollToTopButton() {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 right-4 bg-primary rounded-full text-muted-foreground hover:text-foreground py-3 px-2 cursor-pointer shadow-lg transition group z-9999"
+        className="fixed bottom-4 right-4 bg-primary rounded-full text-muted py-3 px-2 cursor-pointer shadow-lg transition group z-9999"
       >
         <ArrowUpFromDotIcon className="w-5 h-5 duration-300 ease-in-out transform group-hover:-translate-y-1" />
       </button>

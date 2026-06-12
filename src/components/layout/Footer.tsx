@@ -40,7 +40,7 @@ export const Footer = () => {
             >
               VO<span className="text-primary">.</span>
             </Link>
-            <p className="text-sm text-muted-foreground mt-1.5">
+            <p className="text-sm text-muted-foreground/00 mt-1.5">
               © {currentYear} Victor Okoye. All rights reserved.
             </p>
           </div>
@@ -50,7 +50,7 @@ export const Footer = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground/00 hover:text-foreground transition-colors"
               >
                 {link.label}
               </Link>
@@ -65,7 +65,7 @@ export const Footer = () => {
                 aria-label={social.label}
                 className="social-link"
               >
-                <social.icon className="w-3.75 h-3.75" />
+                <social.icon className="w-6 h-6" />
               </Link>
             ))}
           </div>

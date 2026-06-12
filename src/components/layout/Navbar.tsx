@@ -65,9 +65,9 @@ export const Navbar = () => {
         {/* Logo */}
         <Link
           href="#"
-          className="font-display text-xl font-extrabold tracking-tight text-foreground hover:text-primary transition-colors"
+          className="font-display text-xl font-extrabold tracking-tight text-foreground hover:text-primary transition-colors uppercase"
         >
-          VO<span className="text-primary">.</span>
+          Victor Okoye<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -80,9 +80,9 @@ export const Navbar = () => {
                 key={link.href}
                 href={`#${link.href}`}
                 className={cn(
-                  "px-4 py-2 text-sm rounded-full border transition-all duration-200",
+                  "px-4 py-2 text-sm rounded-full border transition-all duration-500",
                   isActive
-                    ? "text-foreground border-border bg-surface2 shadow-[0_0_0_1px_rgba(255,255,255,0.03)]"
+                    ? "text-foreground font-semibold border-border bg-surface2 shadow-[0_0_0_1px_rgba(255,255,255,0.03)]"
                     : "text-muted-foreground border-transparent hover:text-foreground hover:border-border hover:bg-surface2",
                 )}
               >

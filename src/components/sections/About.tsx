@@ -1,6 +1,7 @@
 "use client";
 
 import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import Image from "next/image";
 
 const highlights = [
   {
@@ -28,6 +29,37 @@ const highlights = [
   },
 ];
 
+const tools = [
+  {
+    title: "Reactjs",
+    image: "/icons/reactjs.svg",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/nextjs.jpeg",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/typescript.webp",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/js.jpg",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/tailwind.png",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/github.png",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/figma.png",
+  },
+];
+
 export const About = () => {
   return (
     <section
@@ -36,7 +68,7 @@ export const About = () => {
       style={{ borderColor: "rgba(255,255,255,0.07)" }}
     >
       <div className="max-w-300 mx-auto px-6 md:px-8">
-        <div className="grid lg:grid-cols-2 gap-20 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-start">
           {/* Left */}
           <div>
             <div className="section-eyebrow">
@@ -82,44 +114,72 @@ export const About = () => {
             </blockquote>
           </div>
 
-          {/* Right — highlights grid */}
-          <div
-            className="grid grid-cols-2 gap-px rounded-2xl overflow-hidden"
-            style={{
-              background: "rgba(255,255,255,0.07)",
-              border: "1px solid rgba(255,255,255,0.07)",
-            }}
-          >
-            {highlights.map((h, i) => (
-              <div
-                key={i}
-                className="p-3 sm:p-5 md:p-7 transition-colors"
-                style={{ background: "#141414" }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.background = "#1a1a1a")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "#141414")
-                }
-              >
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
-                  style={{
-                    background: "rgba(232,164,74,0.12)",
-                    border: "1px solid rgba(232,164,74,0.2)",
-                    color: "#e8a44a",
-                  }}
-                >
-                  <h.icon className="w-4.5 h-4.5" />
-                </div>
-                <div className="font-display font-bold text-[0.9375rem] mb-1.5 text-foreground">
-                  {h.title}
-                </div>
-                <div className="text-[0.8125rem] text-muted-foreground leading-[1.65]">
-                  {h.description}
-                </div>
+          {/* Right */}
+          <div className="flex flex-col items-center justify-center gap-6 h-full">
+            {/* Tools */}
+            <div className="rounded-3xl outline outline-white/20 p-3 lg:hidden animate-fade-out animation-delay-300">
+              <h4 className="font-display text-base tracking-widest uppercase text-primary text-center pb-4">
+                Favorite Tools
+              </h4>
+              <div className="flex items-center justify-center flex-wrap gap-2">
+                {tools.map((tool, idx) => (
+                  <div
+                    key={idx}
+                    className="relative bg-[#1a1a1a] size-16 rounded-full border"
+                    style={{
+                      borderColor: "rgba(255,255,255,0.07)",
+                    }}
+                  >
+                    <Image
+                      src={tool.image}
+                      alt={tool.title}
+                      fill
+                      className="rounded-full border object-cover"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* highlights grid */}
+            <div
+              className="grid grid-cols-2 gap-px rounded-2xl overflow-hidden animate-fade-in animation-delay-300"
+              style={{
+                background: "rgba(255,255,255,0.07)",
+                border: "1px solid rgba(255,255,255,0.07)",
+              }}
+            >
+              {highlights.map((h, i) => (
+                <div
+                  key={i}
+                  className="p-3 sm:p-5 md:p-7 transition-colors"
+                  style={{ background: "#141414" }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.background = "#1a1a1a")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.background = "#141414")
+                  }
+                >
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
+                    style={{
+                      background: "rgba(232,164,74,0.12)",
+                      border: "1px solid rgba(232,164,74,0.2)",
+                      color: "#e8a44a",
+                    }}
+                  >
+                    <h.icon className="w-4.5 h-4.5" />
+                  </div>
+                  <div className="font-display font-bold text-[0.9375rem] mb-1.5 text-foreground">
+                    {h.title}
+                  </div>
+                  <div className="text-[0.8125rem] text-muted-foreground leading-[1.65]">
+                    {h.description}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -53,6 +53,37 @@ const socialLinks = [
   },
 ];
 
+const tools = [
+  {
+    title: "Reactjs",
+    image: "/icons/reactjs.svg",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/nextjs.jpeg",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/typescript.webp",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/js.jpg",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/tailwind.png",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/github.png",
+  },
+  {
+    title: "Reactjs",
+    image: "/icons/figma.png",
+  },
+];
+
 export const Hero = () => {
   const router = useRouter();
 
@@ -93,12 +124,12 @@ export const Hero = () => {
 
               {/* Headline */}
               <h1
-                className="font-display font-extrabold leading-[0.95] tracking-[-0.03em] mb-8 animate-fade-in animation-delay-100"
+                className="font-display font-extrabold leading-[0.95] tracking-[-0.03em] capitalize mb-8 animate-fade-in animation-delay-100"
                 style={{ fontSize: "clamp(2.8rem, 7vw, 5rem)" }}
               >
-                Crafting <br />
+                Crafting &nbsp;
                 <em
-                  className="font-serif font-normal not-italic"
+                  className="font-serif font-semibold not-italic"
                   style={{ color: "#e8a44a", fontStyle: "italic" }}
                 >
                   digital
@@ -107,10 +138,12 @@ export const Hero = () => {
                 experiences.
               </h1>
 
-              <p className="text-muted-foreground text-[1.0625rem] max-w-120 leading-[1.75] mb-5 sm:mb-10 animate-fade-in animation-delay-200">
-                Hi, I&apos;m Victor Okoye — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+              <p className="text-muted-foreground text-[1.2625rem] max-w-150 leading-[1.45] mb-5 sm:mb-10 animate-fade-in animation-delay-200">
+                A fullstack{" "}
+                <span className="font-bold">front-end expert&nbsp;</span>
+                with &nbsp;
+                <span className="font-bold">5+ years of experience</span>{" "}
+                building scalable, performant web applications that users love.
               </p>
 
               {/* CTAs */}
@@ -138,7 +171,7 @@ export const Hero = () => {
 
               {/* Socials */}
               <div className="flex items-center gap-3 animate-fade-in animation-delay-400">
-                <span className="text-sm text-muted-foreground/60">
+                <span className="text-sm text-muted-foreground/00">
                   Let&apos;s chat:
                 </span>
                 {socialLinks.map((s) => (
@@ -148,72 +181,95 @@ export const Hero = () => {
                     className="social-link"
                     aria-label={s.label}
                   >
-                    <s.icon className="w-3.75 h-3.75" />
+                    <s.icon className="w-6 h-6" />
                   </Link>
                 ))}
               </div>
             </div>
 
             {/* Right — profile image */}
-            <div className="relative hidden lg:block animate-fade-in animation-delay-300">
-              {/* Exp badge */}
-              <div
-                className="absolute -top-4 -right-4 z-20 w-20 h-20 rounded-full flex flex-col items-center justify-center"
-                style={{
-                  background: "#e8a44a",
-                  color: "#0c0c0c",
-                  boxShadow: "0 0 0 4px #0c0c0c",
-                }}
-              >
-                <span className="font-display font-extrabold text-2xl leading-none">
-                  5+
-                </span>
-                <span className="font-display font-semibold text-[0.5625rem] tracking-wider">
-                  YRS EXP.
-                </span>
-              </div>
-
-              <div
-                className="relative rounded-3xl overflow-hidden border"
-                style={{
-                  borderColor: "rgba(255,255,255,0.14)",
-                  background: "#141414",
-                }}
-              >
-                <Image
-                  src="/victorImage.jpeg"
-                  alt="Photo of Victor Okoye"
-                  width={420}
-                  height={560}
-                  className="w-full object-cover"
-                  style={{ height: "560px", filter: "grayscale(15%)" }}
-                  priority
-                />
+            <div className="space-y-2">
+              <div className="relative hidden lg:block animate-fade-out animation-delay-300">
+                {/* Exp badge */}
                 <div
-                  className="absolute inset-0"
+                  className="absolute -top-4 -right-4 z-20 w-20 h-20 rounded-full flex flex-col items-center justify-center"
                   style={{
-                    background:
-                      "linear-gradient(to bottom, transparent 50%, rgba(12,12,12,0.6) 100%)",
-                  }}
-                />
-                {/* Avail badge */}
-                <div
-                  className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"
-                  style={{
-                    background: "rgba(12,12,12,0.9)",
-                    backdropFilter: "blur(10px)",
-                    border: "1px solid rgba(255,255,255,0.14)",
+                    background: "#e8a44a",
+                    color: "#0c0c0c",
+                    boxShadow: "0 0 0 4px #0c0c0c",
                   }}
                 >
-                  {/* <div
-                    className="w-2 h-2 rounded-full bg-green-500"
-                    style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
-                  /> */}
-                  <span className="relative flex size-3">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
+                  <span className="font-display font-extrabold text-4xl leading-none">
+                    5+
                   </span>
-                  Available for work
+                  <span className="font-display font-semibold text-[0.6625rem] tracking-wider">
+                    YRS EXP.
+                  </span>
+                </div>
+
+                <div
+                  className="relative rounded-3xl overflow-hidden border"
+                  style={{
+                    borderColor: "rgba(255,255,255,0.14)",
+                    background: "#141414",
+                  }}
+                >
+                  <Image
+                    src="/victorImage.jpeg"
+                    alt="Photo of Victor Okoye"
+                    width={420}
+                    height={420}
+                    className="w-full object-cover"
+                    style={{ height: "420px", filter: "grayscale(15%)" }}
+                    priority
+                  />
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, transparent 50%, rgba(12,12,12,0.6) 100%)",
+                    }}
+                  />
+                  {/* Avail badge */}
+                  <div
+                    className="absolute bottom-5 left-5 flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"
+                    style={{
+                      background: "rgba(12,12,12,0.9)",
+                      backdropFilter: "blur(10px)",
+                      border: "1px solid rgba(255,255,255,0.14)",
+                    }}
+                  >
+                    <span className="relative flex size-3">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
+                    </span>
+                    Available for work
+                  </div>
+                </div>
+              </div>
+
+              {/* Tools */}
+              <div className="hidden lg:block rounded-3xl outline outline-white/20 p-3 animate-fade-in animation-delay-300">
+                <h4 className="font-display text-base tracking-widest uppercase text-primary text-center pb-2">
+                  Favorite Tools
+                </h4>
+                <div className="flex items-center justify-center flex-wrap gap-2">
+                  {tools.map((tool, idx) => (
+                    <div
+                      key={idx}
+                      className="relative bg-[#1a1a1a] size-16 rounded-full border"
+                      style={{
+                        borderColor: "rgba(255,255,255,0.07)",
+                      }}
+                    >
+                      <Image
+                        src={tool.image}
+                        alt={tool.title}
+                        fill
+                        className="rounded-full border object-cover"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
