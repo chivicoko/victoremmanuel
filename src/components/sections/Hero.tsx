@@ -59,28 +59,32 @@ const tools = [
     image: "/icons/reactjs.svg",
   },
   {
-    title: "Reactjs",
+    title: "Nextjs",
     image: "/icons/nextjs.jpeg",
   },
   {
-    title: "Reactjs",
+    title: "Typescript",
     image: "/icons/typescript.webp",
   },
   {
-    title: "Reactjs",
+    title: "Javascript",
     image: "/icons/js.jpg",
   },
   {
-    title: "Reactjs",
+    title: "TailwindCSS",
     image: "/icons/tailwind.png",
   },
   {
-    title: "Reactjs",
+    title: "GitHub",
     image: "/icons/github.png",
   },
   {
-    title: "Reactjs",
+    title: "Figma",
     image: "/icons/figma.png",
+  },
+  {
+    title: "Playwright",
+    image: "/icons/playwright.webp",
   },
 ];
 
@@ -249,26 +253,27 @@ export const Hero = () => {
               </div>
 
               {/* Tools */}
-              <div className="hidden lg:block rounded-3xl outline outline-white/20 p-3 animate-fade-in animation-delay-300">
+              <div className="hidden lg:block rounded-3xl outline outline-border p-3 animate-fade-in animation-delay-300">
                 <h4 className="font-display text-base tracking-widest uppercase text-primary text-center pb-2">
                   Favorite Tools
                 </h4>
                 <div className="flex items-center justify-center flex-wrap gap-2">
                   {tools.map((tool, idx) => (
-                    <div
-                      key={idx}
-                      className="relative bg-[#1a1a1a] size-16 rounded-full border"
-                      style={{
-                        borderColor: "rgba(255,255,255,0.07)",
-                      }}
-                    >
-                      <Image
-                        src={tool.image}
-                        alt={tool.title}
-                        fill
-                        className="rounded-full border object-cover"
-                      />
-                    </div>
+                    <Tooltip key={idx} content={tool.title}>
+                      <div
+                        className="relative bg-[#1a1a1a] size-16 rounded-full border"
+                        style={{
+                          borderColor: "rgba(255,255,255,0.07)",
+                        }}
+                      >
+                        <Image
+                          src={tool.image}
+                          alt={tool.title}
+                          fill
+                          className="rounded-full border object-cover"
+                        />
+                      </div>
+                    </Tooltip>
                   ))}
                 </div>
               </div>
