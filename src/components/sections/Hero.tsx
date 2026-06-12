@@ -118,7 +118,7 @@ export const Hero = () => {
               <div className="flex items-center gap-3 mb-8 animate-fade-in">
                 <span className="w-8 h-px bg-primary shrink-0" />
                 <span className="font-display text-base tracking-[0.15em] uppercase text-primary">
-                  Software Engineer · React Specialist
+                  Software Engineer · Frontend Expert
                 </span>
               </div>
 
