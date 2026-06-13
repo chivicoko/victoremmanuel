@@ -10,9 +10,9 @@ import {
   MessageCircle,
   Terminal,
   MoveDownIcon,
+  Mail,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { Tooltip } from "../ui/Tooltip";
 
 const skills = [
@@ -34,7 +34,13 @@ const skills = [
   "GitHub Actions",
 ];
 
+const subject = encodeURIComponent("Let's Work Together");
 const socialLinks = [
+  {
+    icon: Mail,
+    href: `mailto:victor.c.okoye@gmail.com?subject=${subject}`,
+    label: "Email",
+  },
   { icon: Github, href: "https://github.com/chivicoko", label: "GitHub" },
   {
     icon: Linkedin,
@@ -131,12 +137,13 @@ export const Hero = () => {
                 className="font-display font-extrabold leading-[0.95] tracking-[-0.03em] capitalize mb-8 animate-fade-in animation-delay-100"
                 style={{ fontSize: "clamp(2.8rem, 7vw, 5rem)" }}
               >
-                Crafting &nbsp;
+                Crafting <br />
                 <em
-                  className="font-serif font-semibold not-italic"
-                  style={{ color: "#e8a44a", fontStyle: "italic" }}
+                  className="font-serif font-semibold text-[#e8a44a]"
+                  // style={{ color: "#e8a44a", fontStyle: "italic" }}
+                  style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)" }}
                 >
-                  digital
+                  seamless digital
                 </em>
                 <br />
                 experiences.
@@ -179,14 +186,14 @@ export const Hero = () => {
                   Let&apos;s chat:
                 </span>
                 {socialLinks.map((s) => (
-                  <Link
+                  <a
                     key={s.label}
                     href={s.href}
                     className="social-link"
                     aria-label={s.label}
                   >
                     <s.icon className="w-6 h-6" />
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

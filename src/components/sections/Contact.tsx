@@ -15,12 +15,14 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 
+const subject = encodeURIComponent("Let's Work Together");
+
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
     value: "victor.c.okoye@gmail.com",
-    href: "mailto:victor.c.okoye@gmail.com",
+    href: `mailto:victor.c.okoye@gmail.com?subject=${subject}`,
   },
   {
     icon: Phone,
