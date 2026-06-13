@@ -140,8 +140,7 @@ export const Hero = () => {
                 Crafting <br />
                 <em
                   className="font-serif font-semibold text-[#e8a44a]"
-                  // style={{ color: "#e8a44a", fontStyle: "italic" }}
-                  style={{ fontSize: "clamp(2.5rem, 7vw, 5rem)" }}
+                  style={{ fontSize: "clamp(2.2rem, 7vw, 5rem)" }}
                 >
                   seamless digital
                 </em>
@@ -181,7 +180,7 @@ export const Hero = () => {
               </div>
 
               {/* Socials */}
-              <div className="flex items-center gap-3 animate-fade-in animation-delay-400">
+              <div className="flex items-center gap-1 sm:gap-3 animate-fade-in animation-delay-400">
                 <span className="text-sm text-muted-foreground/00">
                   Let&apos;s chat:
                 </span>
@@ -192,7 +191,7 @@ export const Hero = () => {
                     className="social-link"
                     aria-label={s.label}
                   >
-                    <s.icon className="w-6 h-6" />
+                    <s.icon className="size-5 sm:size-6" />
                   </a>
                 ))}
               </div>
