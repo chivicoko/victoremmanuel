@@ -122,7 +122,7 @@ export const About = () => {
           {/* Right */}
           <div className="flex flex-col items-center justify-center gap-6 h-full">
             {/* Tools */}
-            <div className="rounded-3xl outline outline-border p-3 lg:hidden animate-fade-out animation-delay-300">
+            <div className="rounded-3xl border border-border p-3 lg:hidden animate-fade-out animation-delay-300 bg-[#141414]">
               <h4 className="font-display text-base tracking-widest uppercase text-primary text-center pb-4">
                 Favorite Tools
               </h4>

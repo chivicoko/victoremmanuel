@@ -259,7 +259,7 @@ export const Hero = () => {
               </div>
 
               {/* Tools */}
-              <div className="hidden lg:block rounded-3xl outline outline-border p-3 animate-fade-in animation-delay-300">
+              <div className="hidden lg:block rounded-3xl border border-border p-3 animate-fade-in animation-delay-300 bg-[#141414]">
                 <h4 className="font-display text-base tracking-widest uppercase text-primary text-center pb-2">
                   Favorite Tools
                 </h4>
