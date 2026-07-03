@@ -7,41 +7,57 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Forge",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "A premium men's bodywear e-commerce platform with secure authentication, real-time cart and checkout, and integrated payments — built for a fast, polished shopping experience.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "Supabase",
+      "Stripe",
+      "EmailJS",
+    ],
+    link: "https://forge-olive-three.vercel.app/",
+    github: "https://github.com/iamvictorokoye/forge",
   },
   {
-    title: "E-Commerce Platform",
+    title: "NovaBrief",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "An AI-curated newsletter SaaS that automatically sources, summarizes, and delivers personalized content digests — powered by Gemini 2.5 Flash with background job scheduling for reliable delivery.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: [
+      "TypeScript",
+      "Next.js",
+      "TailwindCSS",
+      "Supabase",
+      "Stripe",
+      "EmailJS",
+      "Inngest",
+      "Gemini",
+    ],
+    link: "https://novabrief-nine.vercel.app/",
+    github: "https://github.com/iamvictorokoye/novabrief",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Brif",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "A Chrome extension that summarizes any web page in one click, powered by Gemini 2.5 Flash — built with a secure build-step config pattern to keep API keys out of the client bundle.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    tags: ["JavaScript", "CSS", "EmailJS", "Gemini"],
     link: "#",
-    github: "#",
+    github: "https://github.com/iamvictorokoye/brif",
   },
-  {
-    title: "Project Management Tool",
-    description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
-  },
+  // {
+  //   title: "Project Management Tool",
+  //   description:
+  //     "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+  //   image: "/projects/project4.png",
+  //   tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+  //   link: "#",
+  //   github: "#",
+  // },
 ];
 
 export const Projects = () => {
@@ -302,11 +318,11 @@ export const Projects = () => {
           </div>
         )}
 
-        <div className="text-center mt-10">
+        {/* <div className="text-center mt-10">
           <Link href="#" className="btn-secondary font-bold">
             View More Projects <ArrowUpRight className="w-4 h-4" />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

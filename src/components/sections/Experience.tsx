@@ -1,40 +1,39 @@
 const experiences = [
   {
     period: "April, 2025 — Present (Remote - UK)",
-    role: "Front-end Engineer",
+    role: "Front-End Engineer",
     company: "Optisource Technology Solutions",
     description:
-      "Leading frontend architecture for a suite of fintech and engineering management products. Implemented micro-frontend architecture, reduced bundle size of the fintech app by 40%, and mentored a team of 3 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "Redux"],
+      "Architecting and building production features using React.js and Next.js as the core technology stack. Driving development of scalable B2B technology solutions that help businesses streamline their operations, with a focus on platform performance and usability.",
+    technologies: ["React", "Next.js", "TypeScript"],
     current: true,
   },
   {
     period: "July, 2025 - January, 2026 (7-months contract) (Remote - UK)",
-    role: "Frontend Developer",
+    role: "Front-End Developer",
     company:
       "Technology for Social Change and Development Initiative (Tech4Dev)",
     description:
-      "Contribute to the development of scalable B2B multi-tenant application (Nakise) that help provide platforms for businesses - especially tech organizations for carrying out their operations from start to finish. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "zustand", "shadcn", "Vitest", "PlayWright"],
+      "Engineered front-end features with React.js and Next.js for the NAKISE program, an initiative supporting employability, entrepreneurship, and workplace efficiency among graduates and undergraduates. Collaborated with cross-functional teams to build, optimize, and maintain internal applications addressing a range of business challenges.",
+    technologies: ["React", "Next.js", "TypeScript"],
     current: false,
   },
   {
-    period:
-      "November, 2024 - February, 2025 (4-months contract) (Remote - Nigeria)",
-    role: "Front-end Engineer",
+    period: "November, 2024 — Present · Part-time (Remote - Nigeria)",
     company: "DEV47 Agency",
+    role: "Freelance Front-End Engineer",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "zustand", "shadcn"],
-    current: false,
+      "Freelance Front-end Engineer contributing to client projects on a part-time basis, with end-to-end ownership of individual builds — including wearsbylegend.com, a production eCommerce platform for a body-wear brand.",
+    technologies: ["React", "Next.js", "TypeScript"],
+    current: true,
   },
   {
     period: "May, 2022 - April, 2023 (Nigeria)",
-    role: "Front-end Developer",
+    role: "Front-End Developer",
     company: "Premium ESOWP Limited",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "context API"],
+      "Developed websites and web applications for schools and businesses, using HTML, CSS, JavaScript, jQuery, Bootstrap, and React.js.",
+    technologies: ["React", "JavaScript", "jQuery", "Bootstrap"],
     current: false,
   },
   {
@@ -43,7 +42,7 @@ const experiences = [
     company: "Self-Employed",
     description:
       "Delivered custom web solutions for small businesses and startups. Built 10+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "Reactjs"],
+    technologies: ["JavaScript", "Reactjs", "Nodejs"],
     current: false,
   },
 ];
