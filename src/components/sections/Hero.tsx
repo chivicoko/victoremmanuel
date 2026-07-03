@@ -100,7 +100,7 @@ export const Hero = () => {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-6 sm:pt-24 md:pt-36 pb-16">
+      <section className="relative min-h-screen flex items-center overflow-hidden pt-12 sm:pt-24 md:pt-36 pb-16">
         {/* Background grid */}
         <div
           className="absolute inset-0 pointer-events-none"
@@ -126,7 +126,7 @@ export const Hero = () => {
             <div>
               {/* Eyebrow */}
               <div className="flex items-center gap-3 mb-8 animate-fade-in">
-                <span className="w-8 h-px bg-primary shrink-0" />
+                <span className="w-6 h-px bg-primary shrink-0" />
                 <span className="font-display text-base tracking-[0.15em] uppercase text-primary">
                   Software Engineer · Frontend Expert
                 </span>
